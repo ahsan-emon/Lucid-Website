@@ -120,19 +120,24 @@ header::before {
 .product-overview h6,
 .device-details h6,
 .customize-details h6,
-.testimonial h6 {
+.testimonial h6,
+.pricing h6,
+.contact h6 {
   margin-bottom: 10px;
   text-transform: uppercase;
   letter-spacing: 2px;
   color: #008ed6;
   font-weight: 600;
+  font-size: 16px;
 }
 .product-overview h2,
 .device-details h2,
-.customize-details h2 {
+.customize-details h2,
+.pricing h2,
+.contact h2 {
   color: #1a1a1a;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 25px;
 }
 .title-underline {
@@ -154,7 +159,9 @@ header::before {
 .product-overview:hover .title-underline::after,
 .device-details:hover .title-underline::after,
 .customize-details:hover .title-underline::after,
-.testimonial:hover .title-underline::after {
+.testimonial:hover .title-underline::after,
+.pricing:hover .title-underline::after,
+.contact:hover .title-underline::after {
   width: 48%;
 }
 .title-underline::before {
@@ -170,7 +177,9 @@ header::before {
 .product-overview:hover .title-underline::before,
 .device-details:hover .title-underline::before,
 .customize-details:hover .title-underline::before,
-.testimonial:hover .title-underline::before {
+.testimonial:hover .title-underline::before,
+.pricing:hover .title-underline::before,
+.contact:hover .title-underline::before {
   width: 48%;
 }
 .feature-icon-circle {
@@ -244,7 +253,7 @@ header::before {
 .testimonial h2 {
   color: #fff;
   font-weight: 600;
-  font-size: 40px;
+  font-size: 38px;
   margin-bottom: 25px;
 }
 .client-img {
@@ -293,4 +302,39 @@ header::before {
 }
 .theme h4 span {
   font-weight: 600;
+}
+/* pricing start  */
+
+/* contact start  */
+.contact {
+  background: #ededed;
+}
+
+/* footer start  */
+footer {
+  background: #15141a;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+footer ul li {
+  margin-right: 30px;
+}
+footer ul li:last-child {
+  margin-right: 0px;
+}
+footer ul li a {
+  color: #444348;
+  font-size: 18px;
+}
+footer ul li a:hover {
+  color: #008ed6;
+}
+footer p {
+  color: #444348;
+  margin: 0;
+  text-transform: uppercase;
 }
