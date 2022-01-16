@@ -235,11 +235,11 @@ header::before {
 }
 /* testimonial start  */
 .testimonial {
-  background-image: url("../images/section-bg.png");
+  background-image: url("../images/testimonial-bg.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 500px;
+  height: 520px;
 }
 .testimonial h2 {
   color: #fff;
@@ -262,4 +262,35 @@ header::before {
   font-weight: 600;
   text-transform: uppercase;
   font-size: 16px;
+}
+.owl-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.owl-dots .owl-dot span {
+  display: block;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  margin-right: 10px;
+  margin-top: 120px;
+  transition: 0.4s all ease-in-out;
+}
+.owl-dots .active span {
+  height: 15px;
+  width: 15px;
+  background: #fff;
+}
+/* theme section start  */
+.theme {
+  background: #15141a;
+}
+.theme h4 {
+  color: #fff;
+  font-weight: 300;
+}
+.theme h4 span {
+  font-weight: 600;
 }
