@@ -1,0 +1,14 @@
+@media screen and (max-width: 1024px) {
+  .header-phone {
+    position: absolute;
+    right: 30px;
+    bottom: 0;
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  .header-phone {
+    position: absolute;
+    right: 60px;
+    bottom: 0;
+  }
+}

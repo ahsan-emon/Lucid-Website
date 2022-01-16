@@ -1,0 +1,265 @@
+/* font style  */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap");
+
+/* common part  */
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Source Sans Pro", sans-serif;
+}
+/* header start  */
+header {
+  background-image: url("../images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+  position: relative;
+  z-index: 0;
+}
+header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #16151b1c;
+  z-index: -1;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #fffefe;
+  padding: 0;
+}
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #fffefe;
+}
+.menu-underline {
+  position: relative;
+}
+.menu-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.menu-underline:hover::after {
+  width: 48%;
+}
+.menu-underline::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -3px;
+  width: 0%;
+  height: 2px;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.menu-underline:hover::before {
+  width: 48%;
+}
+/* banner part  */
+.row-height {
+  height: 80vh;
+}
+.banner h6 {
+  color: #008ed6;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.banner h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 600;
+}
+.banner p {
+  color: #999999;
+  margin-bottom: 50px;
+}
+.download-btn {
+  background-color: #008ed6;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 30px;
+}
+.feature-btn {
+  background-color: transparent;
+  border: 1px solid #4d4e53;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 15px 30px;
+  transition: 0.4s all ease-in-out;
+}
+.download-btn:hover {
+  color: #fff;
+}
+.feature-btn:hover {
+  background-color: #008ed6;
+  color: #fff;
+}
+.header-phone {
+  position: absolute;
+  right: 300px;
+  bottom: 0;
+}
+/* product overview  */
+.product-overview {
+  padding-top: 70px;
+}
+.product-overview h6,
+.device-details h6,
+.customize-details h6,
+.testimonial h6 {
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #008ed6;
+  font-weight: 600;
+}
+.product-overview h2,
+.device-details h2,
+.customize-details h2 {
+  color: #1a1a1a;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.title-underline {
+  position: relative;
+  height: 3px;
+  width: 100px;
+  display: block;
+}
+.title-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.product-overview:hover .title-underline::after,
+.device-details:hover .title-underline::after,
+.customize-details:hover .title-underline::after,
+.testimonial:hover .title-underline::after {
+  width: 48%;
+}
+.title-underline::before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 0%;
+  background-color: #008ed6;
+  transition: 0.4s all ease-in-out;
+}
+.product-overview:hover .title-underline::before,
+.device-details:hover .title-underline::before,
+.customize-details:hover .title-underline::before,
+.testimonial:hover .title-underline::before {
+  width: 48%;
+}
+.feature-icon-circle {
+  width: 100px;
+  height: 100px;
+  border: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin: auto;
+}
+.feature-icon-circle i {
+  color: #008ed6;
+  font-size: 25px;
+}
+.product-overview h3 {
+  color: #1a1a1a;
+  margin: 20px 0 10px 0;
+}
+.product-overview p {
+  color: #999;
+}
+.devider {
+  display: block;
+  background-color: #ededed;
+  height: 1px;
+  width: 100%;
+}
+/* device details  */
+.device-details {
+  padding: 60px 0;
+}
+.device-details p,
+.customize-details p {
+  color: #999;
+  margin-top: 20px;
+}
+.device-details ul {
+  list-style: none;
+  margin-top: 30px;
+  padding: 0;
+}
+.device-details ul li {
+  margin-top: 10px;
+}
+.device-details ul li i {
+  height: 25px;
+  width: 25px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #008ed6;
+  margin-right: 3px;
+}
+.device-details ul li span {
+  color: #1a1a1a;
+}
+/* customize details start  */
+.customize-details {
+  background-color: #f2f2f2;
+}
+/* testimonial start  */
+.testimonial {
+  background-image: url("../images/section-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+}
+.testimonial h2 {
+  color: #fff;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 25px;
+}
+.client-img {
+  margin-right: 20px;
+}
+.client-details p {
+  margin-bottom: 5px;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 300;
+}
+.client-details h5 {
+  color: #fff;
+  margin: 0;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 16px;
+}
