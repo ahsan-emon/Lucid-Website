@@ -395,7 +395,7 @@ header::before {
   background: #15141a;
   margin-top: 50px;
   border-radius: 2px;
-  margin-bottom: 250px;
+  margin-bottom: 280px;
 }
 .contact form input {
   background: transparent;
@@ -460,6 +460,7 @@ header::before {
 /* footer start  */
 footer {
   background: #15141a;
+  padding: 32px 0;
 }
 footer ul {
   list-style: none;
@@ -475,7 +476,8 @@ footer ul li:last-child {
 }
 footer ul li a {
   color: #444348;
-  font-size: 18px;
+  font-size: 20px;
+  transition: 0.4s all ease-in-out;
 }
 footer ul li a:hover {
   color: #008ed6;
