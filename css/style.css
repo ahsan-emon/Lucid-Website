@@ -13,7 +13,7 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 90vh;
+  height: 100vh;
   position: relative;
   z-index: 0;
 }
@@ -45,7 +45,7 @@ header::before {
   width: 0%;
   height: 2px;
   background-color: #008ed6;
-  transition: 0.4s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .menu-underline:hover::after {
   width: 48%;
@@ -58,7 +58,7 @@ header::before {
   width: 0%;
   height: 2px;
   background-color: #008ed6;
-  transition: 0.4s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .menu-underline:hover::before {
   width: 48%;
@@ -154,7 +154,7 @@ header::before {
   height: 100%;
   width: 0%;
   background-color: #008ed6;
-  transition: 0.4s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .product-overview:hover .title-underline::after,
 .device-details:hover .title-underline::after,
@@ -172,7 +172,7 @@ header::before {
   height: 100%;
   width: 0%;
   background-color: #008ed6;
-  transition: 0.4s all ease-in-out;
+  transition: 0.5s all ease-in-out;
 }
 .product-overview:hover .title-underline::before,
 .device-details:hover .title-underline::before,
@@ -181,6 +181,15 @@ header::before {
 .pricing:hover .title-underline::before,
 .contact:hover .title-underline::before {
   width: 48%;
+}
+.product {
+  padding: 40px 15px;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+  border-radius: 8px;
+  transition: 0.5s all ease-in-out;
+}
+.product:hover {
+  box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.175);
 }
 .feature-icon-circle {
   width: 100px;
@@ -311,13 +320,13 @@ header::before {
   margin: 0;
   padding: 12px 0;
   color: #1a1a1a;
-  transition: 0.4s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 .pricing sub {
   font-size: 65px;
   font-weight: 600;
   color: #1a1a1a;
-  transition: 0.4s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 .pricing .card-body span {
   font-size: 32px;
@@ -331,7 +340,7 @@ header::before {
   font-size: 18px;
   margin: 0;
   margin-top: 12px;
-  transition: 0.4s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 .pricing .card-footer p {
   color: #999;
@@ -349,10 +358,10 @@ header::before {
   text-transform: uppercase;
   margin-top: 40px;
   margin-bottom: 20px;
-  transition: 0.4s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 .card-body {
-  transition: 0.4s all ease-in-out;
+  transition: 0.6s all ease-in-out;
 }
 .card:hover .card-body,
 .card:hover a {
@@ -437,7 +446,7 @@ header::before {
   transition: 0.4s all ease-in-out;
 }
 .contact form input[type="submit"]:hover {
-  background: #1b9bdb;
+  background: #259bd6;
   color: #fff;
 }
 .map {
