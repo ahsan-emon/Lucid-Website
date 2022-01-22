@@ -4,11 +4,67 @@
     right: 30px;
     bottom: 0;
   }
+  .contact-box {
+    width: 60%;
+  }
 }
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
   .header-phone {
     position: absolute;
     right: 60px;
     bottom: 0;
+  }
+}
+@media screen and (min-width: 736px) and (max-width: 768px) {
+  .owl-dots .owl-dot span {
+    margin-top: 50px;
+  }
+  .header-phone {
+    left: 0px;
+    width: 55%;
+  }
+  header {
+    height: auto;
+    padding-bottom: 450px;
+  }
+  .contact-box {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 735px) {
+  .owl-dots .owl-dot span {
+    margin-top: 50px;
+  }
+  .header-phone {
+    left: 80px;
+    width: 55%;
+  }
+  header {
+    height: auto;
+    padding-bottom: 450px;
+  }
+  .contact-box {
+    width: 70%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 425px) {
+  .owl-dots .owl-dot span {
+    margin-top: 20px;
+  }
+  .header-phone {
+    left: 0px;
+    width: 90%;
+  }
+  header {
+    height: auto;
+    padding-bottom: 550px;
+  }
+  .contact-box {
+    width: 90%;
+  }
+}
+@media screen and (min-width: 0px) and (max-width: 375px) {
+  .download-btn {
+    margin-bottom: 15px;
   }
 }
